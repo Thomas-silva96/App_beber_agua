@@ -31,10 +31,12 @@
             android:inputType="number"
             android:maxEms="100"
             android:maxLength="3"
+            android:minHeight="48dp"
             android:textAlignment="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/time_picker" />
+            app:layout_constraintTop_toBottomOf="@+id/time_picker"
+            tools:ignore="TextContrastCheck" />
 
         <Button
             android:id="@+id/btn_notify"
@@ -45,11 +47,9 @@
             android:layout_marginTop="32dp"
             android:layout_marginEnd="32dp"
             android:layout_marginRight="32dp"
-            android:onClick="notifyClick"
             android:text="@string/notify"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            app:backgroundTint="@color/teal_200"
+            android:textColor="@android:color/white"
+            app:backgroundTint="@color/purple_500"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/edit_txt_number_interval" />
